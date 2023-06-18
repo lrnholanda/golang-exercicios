@@ -13,7 +13,7 @@ func main() {
 	no1, err := strconv.Atoi(os.Args[1])
 	no2, err := strconv.Atoi(os.Args[2])
 	if err != nil {
-		println("Não pode converter palavras")
+		panic(err)
 	} else {
 		var result = sun(no1, no2)
 		println(result)
