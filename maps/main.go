@@ -24,6 +24,7 @@ func main() {
 			fmt.Print("Enter name: ")
 			var contact string
 			fmt.Scan(&contact)
+			fmt.Println(contacts[contact])
 		} else if command == "quit" {
 			break
 		} else {

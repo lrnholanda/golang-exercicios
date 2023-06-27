@@ -24,10 +24,18 @@ func main() {
 		UnitPrice:   5,
 	}
 
+	row3 := Product{
+		title:       "thinkpad",
+		description: "laptop",
+		quantity:    2,
+		UnitPrice:   6000,
+	}
+
 	basket := make([]Product, 0)
 
 	basket = append(basket, row)
 	basket = append(basket, row2)
+	basket = append(basket, row3)
 
 	var sum int = 0
 	for i := 0; i < len(basket); i++ {
