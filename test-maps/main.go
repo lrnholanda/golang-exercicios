@@ -27,7 +27,7 @@ func main() {
 			var contact string
 			fmt.Scan(&contact)
 			value := checkForContact(contact, contacts)
-			if value == true {
+			if value {
 				fmt.Println(contacts[contact])
 			} else {
 				fmt.Println("Contact doesn't exist, do you want to add it? y/n:")
