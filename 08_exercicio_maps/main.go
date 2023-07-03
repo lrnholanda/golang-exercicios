@@ -15,7 +15,7 @@ func main() {
 			"se interessar por low profiles",
 		},
 	}
-
+	user["loureiro_kiko"] = []string{"lavar os cabelos com loreal", "tocar fogo na guitarra"}
 	for k, value := range user {
 		fmt.Println(k)
 		for i, h := range value {
